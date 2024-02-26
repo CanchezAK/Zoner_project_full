@@ -137,8 +137,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Users/admin/Documents/rp2040/Zoner_project_full/example_auto_set_url.cmake"
   "C:/Users/admin/Documents/rp2040/Zoner_project_full/main/CMakeLists.txt"
   "C:/Users/admin/Documents/rp2040/Zoner_project_full/main/DFPlayerMini/CMakeLists.txt"
-  "C:/Users/admin/Documents/rp2040/Zoner_project_full/main/KBD/CMakeLists.txt"
   "C:/Users/admin/Documents/rp2040/Zoner_project_full/main/Zoner/CMakeLists.txt"
+  "C:/Users/admin/Documents/rp2040/Zoner_project_full/main/led_lib/CMakeLists.txt"
+  "C:/Users/admin/Documents/rp2040/Zoner_project_full/main/scan_kbd/CMakeLists.txt"
   "C:/Users/admin/Documents/rp2040/Zoner_project_full/pico_sdk_import.cmake"
   )
 
@@ -236,7 +237,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "main/CMakeFiles/CMakeDirectoryInformation.cmake"
   "main/DFPlayerMini/CMakeFiles/CMakeDirectoryInformation.cmake"
   "main/Zoner/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "main/KBD/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "main/scan_kbd/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "main/led_lib/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -251,5 +253,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "main/CMakeFiles/zoner_full_uart_pio_pio_h.dir/DependInfo.cmake"
   "main/DFPlayerMini/CMakeFiles/df_player.dir/DependInfo.cmake"
   "main/Zoner/CMakeFiles/zoner.dir/DependInfo.cmake"
-  "main/KBD/CMakeFiles/kbd.dir/DependInfo.cmake"
+  "main/scan_kbd/CMakeFiles/scan_kbd.dir/DependInfo.cmake"
+  "main/led_lib/CMakeFiles/led_lib.dir/DependInfo.cmake"
   )

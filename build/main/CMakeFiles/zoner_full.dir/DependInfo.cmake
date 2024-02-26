@@ -57,7 +57,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "LIB_PICO_UTIL=1"
   "PICO_BOARD=\"pico\""
   "PICO_BUILD=1"
-  "PICO_CMAKE_BUILD_TYPE=\"Release\""
+  "PICO_CMAKE_BUILD_TYPE=\"Debug\""
   "PICO_COPY_TO_RAM=0"
   "PICO_CXX_ENABLE_EXCEPTIONS=0"
   "PICO_NO_FLASH=0"
@@ -119,6 +119,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
   "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pio/include"
   "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/include"
+  "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_spi/include"
   )
 
 # The set of dependency files which are needed:
@@ -159,6 +160,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c" "main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" "gcc" "main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d"
   "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c" "main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj" "gcc" "main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj.d"
   "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c" "main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj" "gcc" "main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d"
+  "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c" "main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj" "gcc" "main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj.d"
   "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c" "main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj" "gcc" "main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj.d"
   "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c" "main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj" "gcc" "main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj.d"
   "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c" "main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj" "gcc" "main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj.d"
@@ -189,8 +191,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/DFPlayerMini/CMakeFiles/df_player.dir/DependInfo.cmake"
-  "C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/KBD/CMakeFiles/kbd.dir/DependInfo.cmake"
+  "C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/scan_kbd/CMakeFiles/scan_kbd.dir/DependInfo.cmake"
   "C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/Zoner/CMakeFiles/zoner.dir/DependInfo.cmake"
+  "C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/led_lib/CMakeFiles/led_lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

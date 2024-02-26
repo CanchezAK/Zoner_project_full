@@ -1023,6 +1023,30 @@ C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_p
 	cd /d C:\Users\admin\Documents\rp2040\Zoner_project_full\build && $(MAKE) $(MAKESILENT) -f main\CMakeFiles\zoner_full.dir\build.make main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
+C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.obj: C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+.PHONY : C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.obj
+
+# target to build an object file
+C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj:
+	cd /d C:\Users\admin\Documents\rp2040\Zoner_project_full\build && $(MAKE) $(MAKESILENT) -f main\CMakeFiles\zoner_full.dir\build.make main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+.PHONY : C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+
+C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.i: C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+.PHONY : C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.i
+
+# target to preprocess a source file
+C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.i:
+	cd /d C:\Users\admin\Documents\rp2040\Zoner_project_full\build && $(MAKE) $(MAKESILENT) -f main\CMakeFiles\zoner_full.dir\build.make main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+.PHONY : C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+
+C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.s: C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
+.PHONY : C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.s
+
+# target to generate assembly for a file
+C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.s:
+	cd /d C:\Users\admin\Documents\rp2040\Zoner_project_full\build && $(MAKE) $(MAKESILENT) -f main\CMakeFiles\zoner_full.dir\build.make main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
+.PHONY : C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
+
 C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.obj: C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.obj
 
@@ -1815,6 +1839,9 @@ help:
 	@echo ... C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.obj
 	@echo ... C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.i
 	@echo ... C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.s
+	@echo ... C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.obj
+	@echo ... C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.i
+	@echo ... C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.s
 	@echo ... C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.obj
 	@echo ... C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.i
 	@echo ... C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.s

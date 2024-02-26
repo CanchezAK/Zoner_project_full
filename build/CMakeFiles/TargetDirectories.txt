@@ -176,6 +176,9 @@ C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/DFPlayerMini/CMake
 C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/Zoner/CMakeFiles/zoner.dir
 C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/Zoner/CMakeFiles/edit_cache.dir
 C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/Zoner/CMakeFiles/rebuild_cache.dir
-C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/KBD/CMakeFiles/kbd.dir
-C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/KBD/CMakeFiles/edit_cache.dir
-C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/KBD/CMakeFiles/rebuild_cache.dir
+C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/scan_kbd/CMakeFiles/scan_kbd.dir
+C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/scan_kbd/CMakeFiles/edit_cache.dir
+C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/scan_kbd/CMakeFiles/rebuild_cache.dir
+C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/led_lib/CMakeFiles/led_lib.dir
+C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/led_lib/CMakeFiles/edit_cache.dir
+C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/led_lib/CMakeFiles/rebuild_cache.dir

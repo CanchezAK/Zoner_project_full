@@ -73,7 +73,7 @@ pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S: pico-sdk/s
 
 pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin: pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\admin\Documents\rp2040\Zoner_project_full\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating bs2_default.bin"
-	cd /d C:\Users\admin\Documents\rp2040\Zoner_project_full\build\pico-sdk\src\rp2_common\boot_stage2 && "C:\Program Files\Raspberry Pi\Pico SDK v1.5.1\gcc-arm-none-eabi\bin\arm-none-eabi-objcopy.exe" -Obinary C:/Users/admin/Documents/rp2040/Zoner_project_full/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf C:/Users/admin/Documents/rp2040/Zoner_project_full/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+	cd /d C:\Users\admin\Documents\rp2040\Zoner_project_full\build\pico-sdk\src\rp2_common\boot_stage2 && "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-objcopy.exe" -Obinary C:/Users/admin/Documents/rp2040/Zoner_project_full/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf C:/Users/admin/Documents/rp2040/Zoner_project_full/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 bs2_default_padded_checksummed_asm: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm
 bs2_default_padded_checksummed_asm: pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin

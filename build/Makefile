@@ -246,17 +246,30 @@ zoner/fast:
 .PHONY : zoner/fast
 
 #=============================================================================
-# Target rules for targets named kbd
+# Target rules for targets named scan_kbd
 
 # Build rule for target.
-kbd: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 kbd
-.PHONY : kbd
+scan_kbd: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 scan_kbd
+.PHONY : scan_kbd
 
 # fast build rule for target.
-kbd/fast:
-	$(MAKE) $(MAKESILENT) -f main\KBD\CMakeFiles\kbd.dir\build.make main/KBD/CMakeFiles/kbd.dir/build
-.PHONY : kbd/fast
+scan_kbd/fast:
+	$(MAKE) $(MAKESILENT) -f main\scan_kbd\CMakeFiles\scan_kbd.dir\build.make main/scan_kbd/CMakeFiles/scan_kbd.dir/build
+.PHONY : scan_kbd/fast
+
+#=============================================================================
+# Target rules for targets named led_lib
+
+# Build rule for target.
+led_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 led_lib
+.PHONY : led_lib
+
+# fast build rule for target.
+led_lib/fast:
+	$(MAKE) $(MAKESILENT) -f main\led_lib\CMakeFiles\led_lib.dir\build.make main/led_lib/CMakeFiles/led_lib.dir/build
+.PHONY : led_lib/fast
 
 # Help Target
 help:
@@ -274,7 +287,8 @@ help:
 	@echo ... zoner_full_uart_pio_pio_h
 	@echo ... bs2_default
 	@echo ... df_player
-	@echo ... kbd
+	@echo ... led_lib
+	@echo ... scan_kbd
 	@echo ... zoner
 	@echo ... zoner_full
 .PHONY : help

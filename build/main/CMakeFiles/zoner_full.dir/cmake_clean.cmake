@@ -73,6 +73,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj.d"
   "CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
   "CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d"
+  "CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj"
+  "CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj.d"
   "CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
   "CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj.d"
   "CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
