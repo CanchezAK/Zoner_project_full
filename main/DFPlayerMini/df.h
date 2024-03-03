@@ -12,7 +12,7 @@
 #define BAUD_RATE 9600
 #define KBD_INT0 10
 #define KBD_INT1 11
-#define UART_TX_PIN 9
+#define UART_TX_PIN 6
 
 void checksum();
 void set_equalizer(uint8_t equ);

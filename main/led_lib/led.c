@@ -29,7 +29,7 @@ void write_register_all(uint8_t reg, uint8_t data)
     cs_select();
     for (int i = 0; i< NUM_MODULES;i++)
     {
-        spi_write_blocking(spi1, buf, 2);
+        while (!spi_write_blocking(spi1, buf, 2));
     }
     cs_deselect();
 }
@@ -59,9 +59,10 @@ inline void cs_select()
     asm volatile("nop \n nop \n nop");
 }
 
-void put_pixel(uint8_t *coordxy)
+bool put_pixel(uint8_t *coordxy)
 {
     write_data(coordxy);
+    return (1);
 }
 
 void clear_display()

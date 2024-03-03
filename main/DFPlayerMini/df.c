@@ -11,7 +11,7 @@ uint8_t data[10] = {0x7E, 0xFF, 0x06, 0x03, 0x00, 0x00, 0x02, 0xFE, 0xF7, 0xEF};
         {
             uart_pio_program_putc(pio0, 0, (char)data[i]);
         }
-        sleep_ms(500);
+        sleep_ms(1000);
     }
 
     void checksum()

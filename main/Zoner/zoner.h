@@ -8,6 +8,7 @@
 #define DIR 12
 
 void channel_config(uint8_t out, uint8_t in, uint8_t en);
-void zoner_tx(uint32_t* data);
-void zoner_rx();
-void config_interrupt();
+//void zoner_tx(uint32_t* data);
+void zoner_tx(uint8_t* data);
+void zoner_tx_group_all();
+void zoner_tx_group_clear();

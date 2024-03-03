@@ -16,7 +16,7 @@
 #define coord_SCENEB(mass)  mass[0] = 1, mass[1] = 1
 
 void LED_Init();
-void put_pixel(uint8_t *coordxy);
+bool put_pixel(uint8_t *coordxy);
 void write_data(uint8_t *coord);
 void coord(uint8_t x, uint8_t y, bool flash);
 void clear_display();

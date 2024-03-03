@@ -1,4 +1,5 @@
 #include "scan_kbd.h"
+
 struct KBD_Config read;
 
 uint8_t current_reg[1] = {INT_STAT_REG};
@@ -103,6 +104,28 @@ X:
             read.is_pressed_time_start = get_absolute_time();
             read.is_pressed = 1;
             asm("nop");
+        }
+        if (read.KEY_EVENT_A % 10 == 0 && read.KEY_EVENT_A / 10 == 0)
+        {
+            if (read.is_pressed_sound == 1) read.is_pressed_sound = 0;
+            else if (read.is_pressed_sound == 0) read.is_pressed_sound = 1;
+            read.is_pressed = 0;
+        }
+        else if (read.KEY_EVENT_A / 10 == 1 && read.KEY_EVENT_A % 10 == 0)
+        {
+            //if (read.is_pressed_func & (1 << 1)) read.is_pressed_func &= ~(1 << 1);
+            if (!(read.is_pressed_func & (1 << 1))) read.is_pressed_func |= (1 << 1);
+            read.is_pressed = 0;
+        }
+        else if (read.KEY_EVENT_A / 10 == 5 && read.KEY_EVENT_A % 10 == 2)
+        {
+            if (!(read.is_pressed_func & (1 << 7))) read.is_pressed_func |= (1 << 7);
+            read.is_pressed = 0;
+        }
+        else if (read.KEY_EVENT_A / 10 == 4 && read.KEY_EVENT_A % 10 == 2)
+        {
+            if (!(read.is_pressed_func & (1 << 6))) read.is_pressed_func |= (1 << 6);
+            read.is_pressed = 0;
         }
         asm("nop");
     }
@@ -234,6 +257,18 @@ X:
                 }
             }
             asm("nop");
+        }
+        if (read.KEY_EVENT_A % 10 == 2 && read.KEY_EVENT_A / 10 == 3)
+        {
+            read.is_pressed_zone = 0xFF;
+            read.is_pressed_all = 1;
+            read.is_pressed_scene = 0;
+        }
+        else if (read.KEY_EVENT_A % 10 == 2 && read.KEY_EVENT_A / 10 == 2)
+        {
+            read.is_pressed_zone = 0x00;
+            read.is_pressed_clear = 1;
+            read.is_pressed_scene = 0;
         }
         asm("nop");
     }

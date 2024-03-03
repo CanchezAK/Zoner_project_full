@@ -1668,12 +1668,12 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_as
 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/all:
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\tinyusb\CMakeFiles\tinyusb_pico_pio_usb_usb_tx_pio_h.dir\build.make pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\tinyusb\CMakeFiles\tinyusb_pico_pio_usb_usb_tx_pio_h.dir\build.make pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\admin\Documents\rp2040\Zoner_project_full\build\CMakeFiles --progress-num= "Built target tinyusb_pico_pio_usb_usb_tx_pio_h"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\admin\Documents\rp2040\Zoner_project_full\build\CMakeFiles --progress-num=55 "Built target tinyusb_pico_pio_usb_usb_tx_pio_h"
 .PHONY : pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/all
 
 # Build rule for subdir invocation for target.
 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\admin\Documents\rp2040\Zoner_project_full\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\admin\Documents\rp2040\Zoner_project_full\build\CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\admin\Documents\rp2040\Zoner_project_full\build\CMakeFiles 0
 .PHONY : pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/rule
@@ -1694,12 +1694,12 @@ pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir
 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/all:
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\tinyusb\CMakeFiles\tinyusb_pico_pio_usb_usb_rx_pio_h.dir\build.make pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\tinyusb\CMakeFiles\tinyusb_pico_pio_usb_usb_rx_pio_h.dir\build.make pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\admin\Documents\rp2040\Zoner_project_full\build\CMakeFiles --progress-num=55 "Built target tinyusb_pico_pio_usb_usb_rx_pio_h"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\admin\Documents\rp2040\Zoner_project_full\build\CMakeFiles --progress-num= "Built target tinyusb_pico_pio_usb_usb_rx_pio_h"
 .PHONY : pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/all
 
 # Build rule for subdir invocation for target.
 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\admin\Documents\rp2040\Zoner_project_full\build\CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\admin\Documents\rp2040\Zoner_project_full\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\admin\Documents\rp2040\Zoner_project_full\build\CMakeFiles 0
 .PHONY : pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/rule
@@ -1744,10 +1744,10 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bu
 
 # All Build rule for target.
 main/CMakeFiles/zoner_full.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
-main/CMakeFiles/zoner_full.dir/all: main/DFPlayerMini/CMakeFiles/df_player.dir/all
-main/CMakeFiles/zoner_full.dir/all: main/CMakeFiles/zoner_full_uart_pio_pio_h.dir/all
 main/CMakeFiles/zoner_full.dir/all: main/Zoner/CMakeFiles/zoner.dir/all
 main/CMakeFiles/zoner_full.dir/all: main/scan_kbd/CMakeFiles/scan_kbd.dir/all
+main/CMakeFiles/zoner_full.dir/all: main/CMakeFiles/zoner_full_uart_pio_pio_h.dir/all
+main/CMakeFiles/zoner_full.dir/all: main/DFPlayerMini/CMakeFiles/df_player.dir/all
 main/CMakeFiles/zoner_full.dir/all: main/led_lib/CMakeFiles/led_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f main\CMakeFiles\zoner_full.dir\build.make main/CMakeFiles/zoner_full.dir/depend
 	$(MAKE) $(MAKESILENT) -f main\CMakeFiles\zoner_full.dir\build.make main/CMakeFiles/zoner_full.dir/build

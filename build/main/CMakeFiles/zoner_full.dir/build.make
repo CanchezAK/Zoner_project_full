@@ -1079,6 +1079,20 @@ main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pic
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.s"
 	cd /d C:\Users\admin\Documents\rp2040\Zoner_project_full\build\main && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Program Files\Raspberry Pi\Pico SDK v1.5.1\pico-sdk\src\rp2_common\hardware_spi\spi.c" -o CMakeFiles\zoner_full.dir\C_\Program_Files\Raspberry_Pi\Pico_SDK_v1.5.1\pico-sdk\src\rp2_common\hardware_spi\spi.c.s
 
+main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: main/CMakeFiles/zoner_full.dir/flags.make
+main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: C:/Program\ Files/Raspberry\ Pi/Pico\ SDK\ v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c
+main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: main/CMakeFiles/zoner_full.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\admin\Documents\rp2040\Zoner_project_full\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
+	cd /d C:\Users\admin\Documents\rp2040\Zoner_project_full\build\main && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj -MF CMakeFiles\zoner_full.dir\C_\Program_Files\Raspberry_Pi\Pico_SDK_v1.5.1\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj.d -o CMakeFiles\zoner_full.dir\C_\Program_Files\Raspberry_Pi\Pico_SDK_v1.5.1\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj -c "C:\Program Files\Raspberry Pi\Pico SDK v1.5.1\pico-sdk\src\rp2_common\pico_multicore\multicore.c"
+
+main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i"
+	cd /d C:\Users\admin\Documents\rp2040\Zoner_project_full\build\main && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Program Files\Raspberry Pi\Pico SDK v1.5.1\pico-sdk\src\rp2_common\pico_multicore\multicore.c" > CMakeFiles\zoner_full.dir\C_\Program_Files\Raspberry_Pi\Pico_SDK_v1.5.1\pico-sdk\src\rp2_common\pico_multicore\multicore.c.i
+
+main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s"
+	cd /d C:\Users\admin\Documents\rp2040\Zoner_project_full\build\main && C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Program Files\Raspberry Pi\Pico SDK v1.5.1\pico-sdk\src\rp2_common\pico_multicore\multicore.c" -o CMakeFiles\zoner_full.dir\C_\Program_Files\Raspberry_Pi\Pico_SDK_v1.5.1\pico-sdk\src\rp2_common\pico_multicore\multicore.c.s
+
 # Object files for target zoner_full
 zoner_full_OBJECTS = \
 "CMakeFiles/zoner_full.dir/main.c.obj" \
@@ -1153,7 +1167,8 @@ zoner_full_OBJECTS = \
 "CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" \
 "CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj" \
 "CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj" \
-"CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj"
+"CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj" \
+"CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
 
 # External object files for target zoner_full
 zoner_full_EXTERNAL_OBJECTS =
@@ -1231,6 +1246,7 @@ main/zoner_full.elf: main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_P
 main/zoner_full.elf: main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 main/zoner_full.elf: main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 main/zoner_full.elf: main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+main/zoner_full.elf: main/CMakeFiles/zoner_full.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 main/zoner_full.elf: main/CMakeFiles/zoner_full.dir/build.make
 main/zoner_full.elf: main/DFPlayerMini/libdf_player.a
 main/zoner_full.elf: main/scan_kbd/libscan_kbd.a
@@ -1239,7 +1255,7 @@ main/zoner_full.elf: main/led_lib/libled_lib.a
 main/zoner_full.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 main/zoner_full.elf: main/CMakeFiles/zoner_full.dir/objects1
 main/zoner_full.elf: main/CMakeFiles/zoner_full.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\admin\Documents\rp2040\Zoner_project_full\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Linking CXX executable zoner_full.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\admin\Documents\rp2040\Zoner_project_full\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Linking CXX executable zoner_full.elf"
 	cd /d C:\Users\admin\Documents\rp2040\Zoner_project_full\build\main && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\zoner_full.dir\link.txt --verbose=$(VERBOSE)
 	cd /d C:\Users\admin\Documents\rp2040\Zoner_project_full\build\main && "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-objcopy.exe" -Oihex C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/zoner_full.elf zoner_full.hex
 	cd /d C:\Users\admin\Documents\rp2040\Zoner_project_full\build\main && "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-objcopy.exe" -Obinary C:/Users/admin/Documents/rp2040/Zoner_project_full/build/main/zoner_full.elf zoner_full.bin

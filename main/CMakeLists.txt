@@ -12,7 +12,7 @@ add_subdirectory(Zoner)
 add_subdirectory(scan_kbd)
 add_subdirectory(led_lib)
  # Import pico_stdlib which imports commonly used features
- target_link_libraries(zoner_full pico_stdlib hardware_uart pico_time pico_binary_info hardware_gpio hardware_irq hardware_pio hardware_clocks df_player scan_kbd zoner hardware_timer hardware_i2c hardware_flash led_lib)
+ target_link_libraries(zoner_full pico_stdlib hardware_uart pico_time pico_binary_info hardware_gpio hardware_irq hardware_pio hardware_clocks df_player scan_kbd zoner hardware_timer hardware_i2c hardware_flash led_lib pico_multicore)
 
  # Create map/bin/hex file etc.
  pico_add_extra_outputs(zoner_full)
