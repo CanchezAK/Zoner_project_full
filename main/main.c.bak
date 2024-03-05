@@ -128,16 +128,22 @@ void poll_led()
         {
             read.is_pressed_scene = 0;
         }
-
-        flag_active_zone |= (1 << 0);
+        if (flag_transmitted & (1 << 0))
+        {
+            flag_active_zone |= (1 << 0);
+            flag_transmitted &= ~(1 << 0);
+        }
     }
     else if ((!(read.is_pressed_zone & (1 << 0))) && flag_active_zone & (1 << 0))
     {
         coord(2, 1, 0);
         put_pixel(coordxy);
         zone_flags[0] = 0;
-
-        flag_active_zone &= ~(1 << 0);
+        if (flag_transmitted & (1 << 0))
+        {
+            flag_active_zone &= ~(1 << 0);
+            flag_transmitted &= ~(1 << 0);
+        }
     }
 
     if (read.is_pressed_zone & (1 << 1) && !(flag_active_zone & (1 << 1)))
@@ -149,16 +155,22 @@ void poll_led()
         {
             read.is_pressed_scene = 0;
         }
-
-        flag_active_zone |= (1 << 1);
+        if (flag_transmitted & (1 << 1))
+        {
+            flag_active_zone |= (1 << 1);
+            flag_transmitted &= ~(1 << 1);
+        }
     }
     else if ((!(read.is_pressed_zone & (1 << 1))) && flag_active_zone & (1 << 1))
     {
         coord(2, 5, 0);
         put_pixel(coordxy);
         zone_flags[1] = 0;
-
-        flag_active_zone &= ~(1 << 1);
+        if (flag_transmitted & (1 << 1))
+        {
+            flag_active_zone &= ~(1 << 1);
+            flag_transmitted &= ~(1 << 1);
+        }
     }
 
     if (read.is_pressed_zone & (1 << 2) && !(flag_active_zone & (1 << 2)))
@@ -170,16 +182,22 @@ void poll_led()
         {
             read.is_pressed_scene = 0;
         }
-
-        flag_active_zone |= (1 << 2);
+        if (flag_transmitted & (1 << 2))
+        {
+            flag_active_zone |= (1 << 2);
+            flag_transmitted &= ~(1 << 2);
+        }
     }
     else if ((!(read.is_pressed_zone & (1 << 2))) && flag_active_zone & (1 << 2))
     {
         coord(2, 3, 0);
         put_pixel(coordxy);
         zone_flags[2] = 0;
-
-        flag_active_zone &= ~(1 << 2);
+        if (flag_transmitted & (1 << 2))
+        {
+            flag_active_zone &= ~(1 << 2);
+            flag_transmitted &= ~(1 << 2);
+        }
     }
 
     if (read.is_pressed_zone & (1 << 3) && !(flag_active_zone & (1 << 3)))
@@ -191,15 +209,22 @@ void poll_led()
         {
             read.is_pressed_scene = 0;
         }
-
-        flag_active_zone |= (1 << 3);
+        if (flag_transmitted & (1 << 3))
+        {
+            flag_active_zone |= (1 << 3);
+            flag_transmitted &= ~(1 << 3);
+        }
     }
     else if ((!(read.is_pressed_zone & (1 << 3))) && flag_active_zone & (1 << 3))
     {
         coord(4, 1, 0);
         put_pixel(coordxy);
         zone_flags[3] = 0;
-        flag_active_zone &= ~(1 << 3);
+        if (flag_transmitted & (1 << 3))
+        {
+            flag_active_zone &= ~(1 << 3);
+            flag_transmitted &= ~(1 << 3);
+        }
     }
 
     if (read.is_pressed_zone & (1 << 4) /*&& !(flag_active_zone & (1 << 4))*/)
@@ -211,14 +236,22 @@ void poll_led()
         {
             read.is_pressed_scene = 0;
         }
-        flag_active_zone |= (1 << 4);
+        if (flag_transmitted & (1 << 4))
+        {
+            flag_active_zone |= (1 << 4);
+            flag_transmitted &= ~(1 << 4);
+        }
     }
     else if ((!(read.is_pressed_zone & (1 << 4))) && flag_active_zone & (1 << 4))
     {
         coord(4, 5, 0);
         put_pixel(coordxy);
         zone_flags[4] = 0;
-        flag_active_zone &= ~(1 << 4);
+        if (flag_transmitted & (1 << 4))
+        {
+            flag_active_zone &= ~(1 << 4);
+            flag_transmitted &= ~(1 << 4);
+        }
     }
 
     if (read.is_pressed_zone & (1 << 5) && !(flag_active_zone & (1 << 5)))
@@ -230,14 +263,22 @@ void poll_led()
         {
             read.is_pressed_scene = 0;
         }
-        flag_active_zone |= (1 << 5);
+        if (flag_transmitted & (1 << 5))
+        {
+            flag_active_zone |= (1 << 5);
+            flag_transmitted &= ~(1 << 5);
+        }
     }
     else if ((!(read.is_pressed_zone & (1 << 5))) && flag_active_zone & (1 << 5))
     {
         coord(4, 3, 0);
         put_pixel(coordxy);
         zone_flags[5] = 0;
-        flag_active_zone &= ~(1 << 5);
+        if (flag_transmitted & (1 << 5))
+        {
+            flag_active_zone &= ~(1 << 5);
+            flag_transmitted &= ~(1 << 5);
+        }
     }
 
     if (read.is_pressed_zone & (1 << 6) && !(flag_active_zone & (1 << 6)))
@@ -249,14 +290,22 @@ void poll_led()
         {
             read.is_pressed_scene = 0;
         }
-        flag_active_zone |= (1 << 6);
+        if (flag_transmitted & (1 << 6))
+        {
+            flag_active_zone |= (1 << 6);
+            flag_transmitted &= ~(1 << 6);
+        }
     }
     else if ((!(read.is_pressed_zone & (1 << 6))) && flag_active_zone & (1 << 6))
     {
         coord(3, 1, 0);
         put_pixel(coordxy);
         zone_flags[6] = 0;
-        flag_active_zone &= ~(1 << 6);
+        if (flag_transmitted & (1 << 6))
+        {
+            flag_active_zone &= ~(1 << 6);
+            flag_transmitted &= ~(1 << 6);
+        }
     }
 
     if (read.is_pressed_zone & (1 << 7) && !(flag_active_zone & (1 << 7)))
@@ -268,14 +317,22 @@ void poll_led()
         {
             read.is_pressed_scene = 0;
         }
-        flag_active_zone |= (1 << 7);
+        if (flag_transmitted & (1 << 7))
+        {
+            flag_active_zone |= (1 << 7);
+            flag_transmitted &= ~(1 << 7);
+        }
     }
     else if ((!(read.is_pressed_zone & (1 << 7))) && flag_active_zone & (1 << 7))
     {
         coord(3, 5, 0);
         put_pixel(coordxy);
         zone_flags[7] = 0;
-        flag_active_zone &= ~(1 << 7);
+        if (flag_transmitted & (1 << 7))
+        {
+            flag_active_zone &= ~(1 << 7);
+            flag_transmitted &= ~(1 << 7);
+        }
     }
 
     if (read.is_pressed_scene_write & (1 << 1))
@@ -418,9 +475,9 @@ void transmit_func()
 {
     while (1)
     {
-        if (!read.is_pressed_all && !read.is_pressed_clear)
+        if (!read.is_pressed_all || !read.is_pressed_clear)
         {
-            if (read.is_pressed_zone & (1 << 0) && !(flag_transmitted & (1 << 0)))
+            if (read.is_pressed_zone & (1 << 0) && !(flag_active_zone & (1 << 0)))
             {
                 if (!flag_redact && !flag_full)
                 {
@@ -429,19 +486,21 @@ void transmit_func()
                     sleep_ms(300);
                     flag_transmitted |= (1 << 0);
                 }
+                // flag_active_zone |= (1 << 0);
             }
-            else if ((!(read.is_pressed_zone & (1 << 0))) && flag_transmitted & (1 << 0))
+            else if ((!(read.is_pressed_zone & (1 << 0))) && flag_active_zone & (1 << 0))
             {
                 if (!flag_redact && !flag_full)
                 {
                     channel_config(0, 0, 0); // 0
                     zoner_tx(zoner_command);
                     sleep_ms(300);
-                    flag_transmitted &= ~(1 << 0);
+                    flag_transmitted |= (1 << 0);
                 }
+                // flag_active_zone &= ~(1 << 0);
             }
 
-            if (read.is_pressed_zone & (1 << 1) && !(flag_transmitted & (1 << 1)))
+            if (read.is_pressed_zone & (1 << 1) && !(flag_active_zone & (1 << 1)))
             {
                 if (!flag_redact && !flag_full)
                 {
@@ -450,19 +509,21 @@ void transmit_func()
                     sleep_ms(300);
                     flag_transmitted |= (1 << 1);
                 }
+                // flag_active_zone |= (1 << 1);
             }
-            else if ((!(read.is_pressed_zone & (1 << 1))) && flag_transmitted & (1 << 1))
+            else if ((!(read.is_pressed_zone & (1 << 1))) && flag_active_zone & (1 << 1))
             {
                 if (!flag_redact && !flag_full)
                 {
                     channel_config(1, 0, 0);
                     zoner_tx(zoner_command);
                     sleep_ms(300);
-                    flag_transmitted &= ~(1 << 1);
+                    flag_transmitted |= (1 << 1);
                 }
+                // flag_active_zone &= ~(1 << 1);
             }
 
-            if (read.is_pressed_zone & (1 << 2) && !(flag_transmitted & (1 << 2)))
+            if (read.is_pressed_zone & (1 << 2) && !(flag_active_zone & (1 << 2)))
             {
                 if (!flag_redact && !flag_full)
                 {
@@ -471,19 +532,21 @@ void transmit_func()
                     sleep_ms(300);
                     flag_transmitted |= (1 << 2);
                 }
+                // flag_active_zone |= (1 << 2);
             }
-            else if ((!(read.is_pressed_zone & (1 << 2))) && flag_transmitted & (1 << 2))
+            else if ((!(read.is_pressed_zone & (1 << 2))) && flag_active_zone & (1 << 2))
             {
                 if (!flag_redact && !flag_full)
                 {
                     channel_config(2, 0, 0);
                     zoner_tx(zoner_command);
                     sleep_ms(300);
-                    flag_transmitted &= ~(1 << 2);
+                    flag_transmitted |= (1 << 2);
                 }
+                // flag_active_zone &= ~(1 << 2);
             }
 
-            if (read.is_pressed_zone & (1 << 3) && !(flag_transmitted & (1 << 3)))
+            if (read.is_pressed_zone & (1 << 3) && !(flag_active_zone & (1 << 3)))
             {
                 if (!flag_redact && !flag_full)
                 {
@@ -492,19 +555,21 @@ void transmit_func()
                     sleep_ms(300);
                     flag_transmitted |= (1 << 3);
                 }
+                // flag_active_zone |= (1 << 3);
             }
-            else if ((!(read.is_pressed_zone & (1 << 3))) && flag_transmitted & (1 << 3))
+            else if ((!(read.is_pressed_zone & (1 << 3))) && flag_active_zone & (1 << 3))
             {
                 if (!flag_redact && !flag_full)
                 {
                     channel_config(3, 0, 0);
                     zoner_tx(zoner_command);
                     sleep_ms(300);
-                    flag_transmitted &= ~(1 << 3);
+                    flag_transmitted |= (1 << 3);
                 }
+                // flag_active_zone &= ~(1 << 3);
             }
 
-            if (read.is_pressed_zone & (1 << 4) && !(flag_transmitted & (1 << 4)))
+            if (read.is_pressed_zone & (1 << 4) && !(flag_active_zone & (1 << 4)))
             {
                 if (!flag_redact && !flag_full)
                 {
@@ -513,19 +578,21 @@ void transmit_func()
                     sleep_ms(300);
                     flag_transmitted |= (1 << 4);
                 }
+                // flag_active_zone |= (1 << 4);
             }
-            else if ((!(read.is_pressed_zone & (1 << 4))) && flag_transmitted & (1 << 4))
+            else if ((!(read.is_pressed_zone & (1 << 4))) && flag_active_zone & (1 << 4))
             {
                 if (!flag_redact && !flag_full)
                 {
                     channel_config(4, 0, 0);
                     zoner_tx(zoner_command);
                     sleep_ms(300);
-                    flag_transmitted &= ~(1 << 4);
+                    flag_transmitted |= (1 << 4);
                 }
+                // flag_active_zone &= ~(1 << 4);
             }
 
-            if (read.is_pressed_zone & (1 << 5) && !(flag_transmitted & (1 << 5)))
+            if (read.is_pressed_zone & (1 << 5) && !(flag_active_zone & (1 << 5)))
             {
                 if (!flag_redact && !flag_full)
                 {
@@ -534,19 +601,21 @@ void transmit_func()
                     sleep_ms(300);
                     flag_transmitted |= (1 << 5);
                 }
+                // flag_active_zone |= (1 << 5);
             }
-            else if ((!(read.is_pressed_zone & (1 << 5))) && flag_transmitted & (1 << 5))
+            else if ((!(read.is_pressed_zone & (1 << 5))) && flag_active_zone & (1 << 5))
             {
                 if (!flag_redact && !flag_full)
                 {
                     channel_config(5, 0, 0);
                     zoner_tx(zoner_command);
                     sleep_ms(300);
-                    flag_transmitted &= ~(1 << 5);
+                    flag_transmitted |= (1 << 5);
                 }
+                // flag_active_zone &= ~(1 << 5);
             }
 
-            if (read.is_pressed_zone & (1 << 6) && !(flag_transmitted & (1 << 6)))
+            if (read.is_pressed_zone & (1 << 6) && !(flag_active_zone & (1 << 6)))
             {
                 if (!flag_redact && !flag_full)
                 {
@@ -555,19 +624,21 @@ void transmit_func()
                     sleep_ms(300);
                     flag_transmitted |= (1 << 6);
                 }
+                // flag_active_zone |= (1 << 6);
             }
-            else if ((!(read.is_pressed_zone & (1 << 6))) && flag_transmitted & (1 << 6))
+            else if ((!(read.is_pressed_zone & (1 << 6))) && flag_active_zone & (1 << 6))
             {
                 if (!flag_redact && !flag_full)
                 {
                     channel_config(6, 0, 0);
                     zoner_tx(zoner_command);
                     sleep_ms(300);
-                    flag_transmitted &= ~(1 << 6);
+                    flag_transmitted |= (1 << 6);
                 }
+                // flag_active_zone &= ~(1 << 6);
             }
 
-            if (read.is_pressed_zone & (1 << 7) && !(flag_transmitted & (1 << 7)))
+            if (read.is_pressed_zone & (1 << 7) && !(flag_active_zone & (1 << 7)))
             {
                 if (!flag_redact && !flag_full)
                 {
@@ -576,16 +647,18 @@ void transmit_func()
                     sleep_ms(300);
                     flag_transmitted |= (1 << 7);
                 }
+                // flag_active_zone |= (1 << 7);
             }
-            else if ((!(read.is_pressed_zone & (1 << 7))) && flag_transmitted & (1 << 7))
+            else if ((!(read.is_pressed_zone & (1 << 7))) && flag_active_zone & (1 << 7))
             {
                 if (!flag_redact && !flag_full)
                 {
                     channel_config(7, 0, 0);
                     zoner_tx(zoner_command);
                     sleep_ms(300);
-                    flag_transmitted &= ~(1 << 7);
+                    flag_transmitted |= (1 << 7);
                 }
+                // flag_active_zone &= ~(1 << 7);
             }
         }
         if (read.is_pressed_all)
@@ -595,7 +668,7 @@ void transmit_func()
                 flag_full = 1;
                 read.is_pressed_scene = 0;
                 read.is_pressed_zone = 0xFF;
-                flag_transmitted = 0xFF;
+                // flag_active_zone = 0x00;
                 zoner_tx_group_all();
                 read.is_pressed_all = 0;
             }
@@ -607,7 +680,7 @@ void transmit_func()
                 flag_full = 1;
                 read.is_pressed_scene = 0;
                 read.is_pressed_zone = 0;
-                flag_transmitted = 0x00;
+                // flag_active_zone = 0xFF;
                 read.is_pressed_clear = 0;
                 zoner_tx_group_clear();
             }
@@ -615,17 +688,12 @@ void transmit_func()
         if (read.is_pressed_func & (1 << 7))
         {
             read.is_pressed_func &= ~(1 << 7);
-            play_sound_immediatly(3);
+            play_sound_immediatly(2);
         }
         else if (read.is_pressed_func & (1 << 6))
         {
             read.is_pressed_func &= ~(1 << 6);
-            play_sound_immediatly(2);
-        }
-        else if (read.is_pressed_func & (1 << 1))
-        {
-            read.is_pressed_func &= ~(1 << 1);
-            play_sound_immediatly(1);
+            play_sound_immediatly(3);
         }
     }
 }
@@ -650,8 +718,8 @@ int main()
     uint offset = pio_add_program(pio, &uart_pio_program);
     uart_pio_program_init(pio, sm, offset, UART_TX_PIN, BAUD_RATE);
     sleep_ms(1000);
-    set_volume(5);
-    //play_sound_immediatly(1);
+    set_volume(1);
+    play_sound_immediatly(1);
     // KBD Init
     LED_Init();
     struct KBD_Config config;

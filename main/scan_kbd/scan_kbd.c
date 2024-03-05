@@ -6,6 +6,7 @@ uint8_t current_reg[1] = {INT_STAT_REG};
 uint8_t debug0 = 0;
 uint8_t debug1 = 0;
 uint64_t debug2 = 0;
+uint8_t flag_full = 0;
 
 void keypad_interrupt()
 {
@@ -31,72 +32,120 @@ X:
         if ((read.KEY_EVENT_A / 10 == 1 && read.KEY_EVENT_A % 10 == 2) && !(read.is_pressed_zone & (1 << 0)))
         {
             read.is_pressed_zone |= (1 << 0);
+            flag_full = 0;
+            read.is_pressed_all = 0;
+            read.is_pressed_clear = 0;
         }
         else if ((read.KEY_EVENT_A / 10 == 1 && read.KEY_EVENT_A % 10 == 2) && (read.is_pressed_zone & (1 << 0)))
         {
             read.is_pressed_zone &= ~(1 << 0);
+            flag_full = 0;
+            read.is_pressed_all = 0;
+            read.is_pressed_clear = 0;
         }
         else if ((read.KEY_EVENT_A / 10 == 0 && read.KEY_EVENT_A % 10 == 2) && !(read.is_pressed_zone & (1 << 1)))
         {
             read.is_pressed_zone |= (1 << 1);
+            flag_full = 0;
+            read.is_pressed_all = 0;
+            read.is_pressed_clear = 0;
         }
         else if ((read.KEY_EVENT_A / 10 == 0 && read.KEY_EVENT_A % 10 == 2) && (read.is_pressed_zone & (1 << 1)))
         {
             read.is_pressed_zone &= ~(1 << 1);
+            flag_full = 0;
+            read.is_pressed_all = 0;
+            read.is_pressed_clear = 0;
         }
 
         else if ((read.KEY_EVENT_A / 10 == 5 && read.KEY_EVENT_A % 10 == 1) && !(read.is_pressed_zone & (1 << 2)))
         {
             read.is_pressed_zone |= (1 << 2);
+            flag_full = 0;
+            read.is_pressed_all = 0;
+            read.is_pressed_clear = 0;
         }
         else if ((read.KEY_EVENT_A / 10 == 5 && read.KEY_EVENT_A % 10 == 1) && (read.is_pressed_zone & (1 << 2)))
         {
             read.is_pressed_zone &= ~(1 << 2);
+            flag_full = 0;
+            read.is_pressed_all = 0;
+            read.is_pressed_clear = 0;
         }
 
         else if ((read.KEY_EVENT_A / 10 == 4 && read.KEY_EVENT_A % 10 == 1) && !(read.is_pressed_zone & (1 << 3)))
         {
             read.is_pressed_zone |= (1 << 3);
+            flag_full = 0;
+            read.is_pressed_all = 0;
+            read.is_pressed_clear = 0;
         }
         else if ((read.KEY_EVENT_A / 10 == 4 && read.KEY_EVENT_A % 10 == 1) && (read.is_pressed_zone & (1 << 3)))
         {
             read.is_pressed_zone &= ~(1 << 3);
+            flag_full = 0;
+            read.is_pressed_all = 0;
+            read.is_pressed_clear = 0;
         }
 
         else if ((read.KEY_EVENT_A / 10 == 3 && read.KEY_EVENT_A % 10 == 1) && !(read.is_pressed_zone & (1 << 4)))
         {
             read.is_pressed_zone |= (1 << 4);
+            flag_full = 0;
+            read.is_pressed_all = 0;
+            read.is_pressed_clear = 0;
         }
         else if ((read.KEY_EVENT_A / 10 == 3 && read.KEY_EVENT_A % 10 == 1) && (read.is_pressed_zone & (1 << 4)))
         {
             read.is_pressed_zone &= ~(1 << 4);
+            flag_full = 0;
+            read.is_pressed_all = 0;
+            read.is_pressed_clear = 0;
         }
 
         else if ((read.KEY_EVENT_A / 10 == 2 && read.KEY_EVENT_A % 10 == 1) && !(read.is_pressed_zone & (1 << 5)))
         {
             read.is_pressed_zone |= (1 << 5);
+            flag_full = 0;
+            read.is_pressed_all = 0;
+            read.is_pressed_clear = 0;
         }
         else if ((read.KEY_EVENT_A / 10 == 2 && read.KEY_EVENT_A % 10 == 1) && (read.is_pressed_zone & (1 << 5)))
         {
             read.is_pressed_zone &= ~(1 << 5);
+            flag_full = 0;
+            read.is_pressed_all = 0;
+            read.is_pressed_clear = 0;
         }
 
         else if ((read.KEY_EVENT_A / 10 == 1 && read.KEY_EVENT_A % 10 == 1) && !(read.is_pressed_zone & (1 << 6)))
         {
             read.is_pressed_zone |= (1 << 6);
+            flag_full = 0;
+            read.is_pressed_all = 0;
+            read.is_pressed_clear = 0;
         }
         else if ((read.KEY_EVENT_A / 10 == 1 && read.KEY_EVENT_A % 10 == 1) && (read.is_pressed_zone & (1 << 6)))
         {
             read.is_pressed_zone &= ~(1 << 6);
+            flag_full = 0;
+            read.is_pressed_all = 0;
+            read.is_pressed_clear = 0;
         }
 
         else if ((read.KEY_EVENT_A / 10 == 0 && read.KEY_EVENT_A % 10 == 1) && !(read.is_pressed_zone & (1 << 7)))
         {
             read.is_pressed_zone |= (1 << 7);
+            flag_full = 0;
+            read.is_pressed_all = 0;
+            read.is_pressed_clear = 0;
         }
         else if ((read.KEY_EVENT_A / 10 == 0 && read.KEY_EVENT_A % 10 == 1) && (read.is_pressed_zone & (1 << 7)))
         {
             read.is_pressed_zone &= ~(1 << 7);
+            flag_full = 0;
+            read.is_pressed_all = 0;
+            read.is_pressed_clear = 0;
         }
         read.is_pressed = 1;
         if (SCENE_QUESTION)
@@ -135,6 +184,9 @@ X:
         read.is_pressed = 0;
         if (SCENE_QUESTION)
         {
+            flag_full = 0;
+            read.is_pressed_all = 0;
+            read.is_pressed_clear = 0;
             read.is_pressed_time_stop = get_absolute_time();
             read.is_pressed_time_stop._private_us_since_boot = to_us_since_boot(read.is_pressed_time_stop) - to_us_since_boot(read.is_pressed_time_start);
             read.is_pressed = 0;
@@ -260,15 +312,15 @@ X:
         }
         if (read.KEY_EVENT_A % 10 == 2 && read.KEY_EVENT_A / 10 == 3)
         {
-            read.is_pressed_zone = 0xFF;
+            //read.is_pressed_zone = 0xFF;
             read.is_pressed_all = 1;
-            read.is_pressed_scene = 0;
+            //read.is_pressed_scene = 0;
         }
         else if (read.KEY_EVENT_A % 10 == 2 && read.KEY_EVENT_A / 10 == 2)
         {
-            read.is_pressed_zone = 0x00;
+            //read.is_pressed_zone = 0x00;
             read.is_pressed_clear = 1;
-            read.is_pressed_scene = 0;
+            //read.is_pressed_scene = 0;
         }
         asm("nop");
     }
